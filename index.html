@@ -11,10 +11,12 @@
     <input placeholder="Wiki name...">
     <br/>
     <br/>
-    <textarea placeholder="Text..." rows="4" cols="50">Lorem Lpsum</textarea>
+    <textarea placeholder="Text..." id="text" rows="4" cols="50"></textarea>
+    <button onclick="addlink()">Add link</button>
     <br/>
     <p>Add images:</p>
     <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+    <br/>
     <img id="output" width="200" />
   </body>
   <script>
@@ -22,5 +24,9 @@
         var image = document.getElementById('output');
         image.src = URL.createObjectURL(event.target.files[0]);
     };
+
+    function addlink() {
+      document.getElementById("text").value = document.getElementById("text").value + '\n<a href="https://website.url">name</a>';
+    }
   </script>
 </html>
