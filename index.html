@@ -24,7 +24,7 @@
   <script>
     var loadFile = function(event) {
         source = URL.createObjectURL(event.target.files[0]);
-        document.getElementById('output').innerHTML = "<br/>" + spanoutput.value + `<img src="${source}" width="200"/>`
+        document.getElementById('output').innerHTML = "<br/>" + document.getElementById('output').value + `<img src="${source}" width="200"/>`
     };
 
     function addlink() {
