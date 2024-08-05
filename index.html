@@ -11,13 +11,15 @@
     <input placeholder="Wiki name...">
     <br/>
     <br/>
-    <textarea placeholder="Text..." id="text" rows="4" cols="50"></textarea>
+    <textarea placeholder="Text..." id="text" rows="8" cols="50"></textarea>
+    <br/>
     <button onclick="addlink()">Add link</button>
     <br/>
     <p>Add images:</p>
     <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
     <br/>
     <img id="output" width="200" />
+    <br/>
   </body>
   <script>
     var loadFile = function(event) {
