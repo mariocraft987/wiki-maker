@@ -23,9 +23,8 @@
   </body>
   <script>
     var loadFile = function(event) {
-        var spanoutput = document.getElementById('output');
         source = URL.createObjectURL(event.target.files[0]);
-        spanoutput.value = "<br/>" + spanoutput.value + `<img href="${source}" width="200"/>`
+        document.getElementById('output').innerHTML = "<br/>" + spanoutput.value + `<img href="${source}" width="200"/>`
     };
 
     function addlink() {
