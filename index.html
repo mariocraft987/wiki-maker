@@ -19,10 +19,11 @@
     <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
     <br/>
     <br/>
-    <button>Make</button>
+    <button onclick="makeWiki()">Make</button>
     <span id="output"></span>
     <br/>
   </body>
+  <script src="files/wiki.js"></script>
   <script>
     var loadFile = function(event) {
         source = URL.createObjectURL(event.target.files[0]);
